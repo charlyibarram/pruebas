@@ -44,12 +44,12 @@ public class JavaApplication4 {
         List<String> strings= new ArrayList<String>();
         
         
-       // personas.stream().filter(p->p.getFechaNac().isLeapYear()).forEach(p->System.out.println(p));
-       //personas.stream().filter(p->p.getNombre().startsWith("A")).filter(p->p.getCiudadOrigen().equals("CHI")).forEach(p->System.out.println(p));
+       personas.stream().filter(p->p.getFechaNac().isLeapYear()).forEach(p->System.out.println(p));
+       personas.stream().filter(p->p.getNombre().startsWith("A")).filter(p->p.getCiudadOrigen().equals("CHI")).forEach(p->System.out.println(p));
          
-       //personas.stream().peek(p->p.setFechaNac(p.getFechaNac().plusYears(2))).filter(p->p.getFechaNac().getYear()>1990).forEach(p->System.out.println(p));
+       personas.stream().peek(p->p.setFechaNac(p.getFechaNac().plusYears(2))).filter(p->p.getFechaNac().getYear()>1990).forEach(p->System.out.println(p));
        
-     //  DateTimeFormatter formato=DateTimeFormatter.ofPattern("EEEE, dd, 'de' MMMM, 'de' yyyy");
+       DateTimeFormatter formato=DateTimeFormatter.ofPattern("EEEE, dd, 'de' MMMM, 'de' yyyy");
        
        
       // personas.stream().map(p->p.getFechaNac().format(formato)).forEach(p->strings.add(p));

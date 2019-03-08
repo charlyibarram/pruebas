@@ -49,7 +49,7 @@ public class JavaApplication4 {
          
        personas.stream().peek(p->p.setFechaNac(p.getFechaNac().plusYears(2))).filter(p->p.getFechaNac().getYear()>1990).forEach(p->System.out.println(p));
        
-       DateTimeFormatter formato=DateTimeFormatter.ofPattern("EEEE, dd, 'de' MMMM, 'de' yyyy");
+      // DateTimeFormatter formato=DateTimeFormatter.ofPattern("EEEE, dd, 'de' MMMM, 'de' yyyy");
        
        
       // personas.stream().map(p->p.getFechaNac().format(formato)).forEach(p->strings.add(p));
